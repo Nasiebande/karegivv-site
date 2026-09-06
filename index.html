@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KareGivv | Home healthcare, simplified</title>
-<meta name="description" content="KareGivv matches Kenyan families with vetted professional caregivers for home care: elderly, post-op, palliative and more. Secure M-Pesa payments. Join our Nairobi pilot.">
+<meta name="description" content="KareGivv helps Kenyan families choose a trusted, vetted caregiver for everyday home care: companionship, personal care and post-hospital support. Secure M-Pesa payments. Join our Nairobi pilot.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -115,7 +115,18 @@
   .svc .ic{width:44px;height:44px;border-radius:12px;background:var(--teal-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;}
   .svc .ic svg{width:24px;height:24px;stroke:var(--ink);}
   .svc p{font-size:.94rem;margin:0;}
+  .svc-list{margin:0;padding-left:1.05rem;}
+  .svc-list li{font-size:.92rem;color:var(--slate);margin-bottom:5px;}
+  .svc-note{margin:12px 0 0;font-size:.82rem;font-style:italic;color:var(--teal);}
   .svc-more{text-align:center;margin-top:26px;font-size:.96rem;color:var(--slate);}
+  .gap-row{display:flex;align-items:stretch;justify-content:center;gap:12px;margin-top:8px;}
+  .gap-item{flex:1;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:18px;text-align:center;}
+  .gap-item p{font-size:.9rem;color:var(--slate);margin:8px 0 0;}
+  .gap-hi{background:var(--ink);border-color:var(--ink);}
+  .gap-hi p{color:#dfeef4;}
+  .gap-tag{display:inline-block;font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:.9rem;color:var(--ink);}
+  .gap-tag-hi{color:var(--gold);}
+  .gap-arrow{display:flex;align-items:center;font-size:1.4rem;color:var(--teal);flex:none;}
 
   /* ---------- steps ---------- */
   .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:step;}
@@ -177,6 +188,8 @@
     .hero{padding:40px 0 20px;}
     .svc-grid,.steps,.trust-grid{grid-template-columns:1fr;}
     .svc-grid{gap:14px;}
+    .gap-row{flex-direction:column;}
+    .gap-arrow{transform:rotate(90deg);justify-content:center;}
     .foot-top{flex-direction:column;}
   }
   @media(min-width:861px) and (max-width:980px){
@@ -223,7 +236,7 @@
       <div>
         <p class="eyebrow">Home healthcare, simplified</p>
         <h1>Trusted care for your loved ones, at home.</h1>
-        <p class="lead">KareGivv matches Kenyan families with vetted, professional caregivers, and pays them securely through M-Pesa.</p>
+        <p class="lead">KareGivv helps Kenyan families choose a trusted, vetted caregiver for everyday care at home, paid securely through M-Pesa.</p>
         <div class="hero-cta">
           <a class="btn btn-teal" href="#pilot">I need a caregiver</a>
           <a class="btn btn-ghost" href="#pilot">I am a caregiver</a>
@@ -259,12 +272,21 @@
     </div>
   </section>
 
-  <!-- WHAT WE DO -->
+  <!-- THE GAP WE CLOSE -->
   <section class="band" id="about">
-    <div class="wrap center">
-      <p class="eyebrow">Why KareGivv</p>
-      <h2>Finding good home care shouldn't be this hard.</h2>
-      <p>When a family member needs care, most Kenyan families rely on word of mouth, an untrained house help, or one relative carrying it all. KareGivv gives you a better way: a trusted network of professional caregivers, matched to your needs, with secure payment and real accountability.</p>
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">The gap we close</p>
+        <h2>Between the hospital and daily life, families are on their own.</h2>
+        <p>Hospitals treat illness. But most care a loved one needs at home isn't medical: it's help bathing, moving safely, eating well, keeping to a recovery routine, and simply not being alone. Today Kenyan families fill that gap with word of mouth and untrained help. KareGivv gives you trusted, vetted caregivers you choose yourself, for everyday care.</p>
+      </div>
+      <div class="gap-row">
+        <div class="gap-item"><span class="gap-tag">Hospital</span><p>Treats the illness, then discharges.</p></div>
+        <div class="gap-arrow">→</div>
+        <div class="gap-item gap-hi"><span class="gap-tag gap-tag-hi">KareGivv</span><p>Everyday care at home: recovery support, personal care and companionship. This is the gap we close.</p></div>
+        <div class="gap-arrow">→</div>
+        <div class="gap-item"><span class="gap-tag">Back to life</span><p>Independence, with family peace of mind.</p></div>
+      </div>
     </div>
   </section>
 
@@ -272,43 +294,47 @@
   <section id="services">
     <div class="wrap">
       <div class="center">
-        <p class="eyebrow">What we cover</p>
-        <h2>Care across six areas</h2>
-        <p>Whether it's a few hours of companionship or full daily support, we match you with a caregiver trained for the need.</p>
+        <p class="eyebrow">What our caregivers do</p>
+        <h2>Everyday care, in three areas</h2>
+        <p>Non-clinical, daily-living support from vetted caregivers you choose. Clinical needs like wound care or injections are referred to a nursing partner.</p>
       </div>
       <div class="svc-grid">
         <div class="svc">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5 21v-1a7 7 0 0114 0v1"/></svg></div>
-          <h3>Elderly care</h3>
-          <p>Day-to-day support, mobility help, and companionship for ageing parents and grandparents.</p>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a4 4 0 018-1 4 4 0 018 1c0 5.5-7 10-7 10z"/></svg></div>
+          <h3>Companionship &amp; home help</h3>
+          <ul class="svc-list">
+            <li>Companionship</li>
+            <li>Meal preparation</li>
+            <li>Shopping &amp; errands</li>
+            <li>Accompanying to medical check-ups, with notes shared back to the family</li>
+            <li>Light housekeeping</li>
+          </ul>
         </div>
         <div class="svc">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a4 4 0 018-1 4 4 0 018 1c0 5.5-7 10-7 10z"/></svg></div>
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5 21v-1a7 7 0 0114 0v1"/></svg></div>
           <h3>Personal care</h3>
-          <p>Bathing, dressing, grooming, toileting and medication reminders, handled with dignity.</p>
+          <ul class="svc-list">
+            <li>Bathing</li>
+            <li>Dressing &amp; grooming</li>
+            <li>Medication reminders</li>
+            <li>Toileting</li>
+            <li>Mobility &amp; safe movement</li>
+            <li>Respite for family carers</li>
+          </ul>
         </div>
         <div class="svc">
           <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8M12 2v6M6 8h12l-1 12a2 2 0 01-2 2H9a2 2 0 01-2-2z"/></svg></div>
-          <h3>Post-operative recovery</h3>
-          <p>At-home support after surgery: wound-care assistance, mobility, and daily routines.</p>
-        </div>
-        <div class="svc">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5-3 8-7 8-12a4 4 0 00-8-1 4 4 0 00-8 1c0 5 3 9 8 12z"/></svg></div>
-          <h3>Palliative &amp; end-of-life</h3>
-          <p>Compassionate comfort care that supports both the patient and the whole family.</p>
-        </div>
-        <div class="svc">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg></div>
-          <h3>Dementia &amp; Alzheimer's</h3>
-          <p>Patient, specialised support for memory loss, routine, and safety at home.</p>
-        </div>
-        <div class="svc">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h4l2-6 4 12 2-6h4"/></svg></div>
-          <h3>Chronic &amp; special needs</h3>
-          <p>Ongoing support for chronic conditions and disability, tailored to each person.</p>
+          <h3>Post-hospital support</h3>
+          <ul class="svc-list">
+            <li>Everyday help through recovery after discharge</li>
+            <li>Mobility &amp; safe movement at home</li>
+            <li>Personal care &amp; meals</li>
+            <li>Keeping to the recovery routine</li>
+            <li>Medication reminders &amp; companionship</li>
+          </ul>
+          <p class="svc-note">Clinical tasks referred to a nursing partner.</p>
         </div>
       </div>
-      <p class="svc-more">Plus companion care, respite care and medication management, with medical escort and equipment rentals coming soon.</p>
     </div>
   </section>
 
